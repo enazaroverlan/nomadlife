@@ -5,40 +5,28 @@
  * Date: 19.06.2016
  * Time: 12:47
  */
+require_once('../defines/defines.php');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Nomad Life - Page Title</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link href="/<?php echo URL_PREFIX; ?>style/style.css" rel="stylesheet" type="text/css" />
-        <link href="/<?php echo URL_PREFIX; ?>style/bootstrap.css">
-        <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/jquery.v1.4.2.js"></script>
-        <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/jquery.cycle.all.min.js"></script>
-        <!--  ACTIVATE CUFON TEXT REPLACEMENT IF ENABLED IN THEME OPTIONS  -->
-        <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/cufon-yui.js"></script>
-        <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/liberation_sans.js"></script>
-    </head>
-    <body>
+
         <div class="login_form">
-            <form class="form-horizontal" role="form" action="/<?php URL_PREFIX; ?>admin/?action=login">
+            <form class="form-horizontal" role="form" action="/<?php echo URL_PREFIX; ?>admin/?action=login" method="post">
                 <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Login</label>
+                    <label for="inputEmail3" class="col-sm-2 control-label"><span style="color:white;">Login</span></label>
                     <div class="col-sm-10">
-                        <input type="login" class="form-control" id="inputEmail3" placeholder="Email">
+                        <input type="text" name="login" class="form-control" id="inputEmail3" placeholder="login">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <label for="inputPassword3" class="col-sm-2 control-label"><span style="color:white;">Password</span></label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" name="remember_me"> Remember me
+                                <input type="checkbox" name="remember_me"><span style="color:white;"> Remember me</span>
                             </label>
                         </div>
                     </div>
@@ -50,5 +38,3 @@
                 </div>
             </form>
         </div>
-    </body>
-</html>

@@ -14,7 +14,7 @@ class Security
 
     public static function GetStatus()
     {
-        return self::$isAuth;
+        return isset($_SESSION['isAuth']);
     }
 
     public static function Login($login, $password)
@@ -30,5 +30,13 @@ class Security
         else {
             self::$isAuth = false;
         }
+    }
+
+    public static function LogOut()
+    {
+        unset($_SESSION['isAuth']);
+        unset($_SESSION['isAdmin']);
+        session_abort();
+        self::$isAuth = false;
     }
 }

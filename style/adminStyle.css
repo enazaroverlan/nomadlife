@@ -1,0 +1,36 @@
+body{
+    font: 11pt normal Cursive sans-serif;
+    background: #31708f;
+    padding: 0;
+    margin: 0;
+}
+
+
+.login_form{
+    width: 200px;
+    height: 200px;
+    margin: auto auto;
+}
+
+.left_bar {
+    padding-top: 20px;
+    padding-left: 0;
+    width: 130px;
+    height: 100%;
+    background: #2a2a2a;
+}
+
+.bar_item {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15pt;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #00bcde;
+    border-top: 1px solid #00bcde;
+}
+
+.bar_item:Hover {
+    background: #31708f;
+}

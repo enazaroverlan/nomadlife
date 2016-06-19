@@ -17,6 +17,7 @@ class database
             return self::$con;
         } else {
             self::$con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+            return self::$con;
         }
     }
 
