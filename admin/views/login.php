@@ -11,13 +11,13 @@ require_once('../defines/defines.php');
         <div class="login_form">
             <form class="form-horizontal" role="form" action="/<?php echo URL_PREFIX; ?>admin/?action=login" method="post">
                 <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label"><span style="color:white;">Login</span></label>
+                    <label for="inputEmail3" class="col-sm-2 control-label">Login</label>
                     <div class="col-sm-10">
                         <input type="text" name="login" class="form-control" id="inputEmail3" placeholder="login">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label"><span style="color:white;">Password</span></label>
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
                     <div class="col-sm-10">
                         <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
                     </div>
@@ -26,7 +26,7 @@ require_once('../defines/defines.php');
                     <div class="col-sm-offset-2 col-sm-10">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" name="remember_me"><span style="color:white;"> Remember me</span>
+                                <input type="checkbox" name="remember_me">Remember me
                             </label>
                         </div>
                     </div>

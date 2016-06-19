@@ -6,53 +6,52 @@
  * Time: 9:24
  */
 ?>
-<div class="header_blog">
+<div class="header_blog" id="header_block">
     <div class="body">
-        <h3>Contact Us</h3>
+        <h3>Обратная связь</h3>
         <div class="left">
-            <h2>Contact us<br />
-                <span>Sed congue, dui vel tristique mollis...</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-            <h2>Send us a mail</h2>
+            <h2>Свяжитесь с нами<br />
+                <span>email...</span></h2>
+            <p>Мы ответим вам как только прочитаем. Обычно мы отвечаем в течении 24 часов.</p>
+            <h2>Оставьте нам письмо</h2>
             <form action="" method="post" id="contactform">
                 <ol>
                     <li>
-                        <label for="name">First Name: <span>(required)</span></label>
+                        <label for="name">Имя: <span>(обязательно)</span></label>
                         <input id="name" name="name" class="text" />
                     </li>
                     <li>
-                        <label for="email">Your email: <span>(required)</span></label>
+                        <label for="email">ваш E-Mail: <span>(обязательно)</span></label>
                         <input id="email" name="email" class="text" />
                     </li>
                     <li>
-                        <label for="company">Company:</label>
+                        <label for="company">Компания:</label>
                         <input id="company" name="company" class="text" />
                     </li>
                     <li>
-                        <label for="subject">Subject: <span>(required)</span></label>
+                        <label for="subject">Тема: <span>(обязательно)</span></label>
                         <input id="subject" name="subject" class="text" />
                     </li>
                     <li>
-                        <label for="message">Message: <span>(required)</span></label>
+                        <label for="message">Сообщение: <span>(обязательно)</span></label>
                         <textarea id="message" name="message" rows="6" cols="50"></textarea>
                     </li>
                     <li class="buttons">
-                        <input type="image" name="imageField" id="imageField" src="/<?php echo URL_PREFIX; ?>resources/images/send.gif" class="send" />
+                        <button type="button" class="btn btn-primary"><span style="color: white;">Отправить</span></button>
                         <div class="clr"></div>
                     </li>
                 </ol>
             </form>
         </div>
         <div class="right">
-            <h2>Address<br />
-                <span>Sed congue, dui vel tristique mollis...</span></h2>
-            <p><a href="#">Address Info</a><br />
-                1234 Address City, TS 56789<br />
-                City, Country</p>
-            <p><a href="#">Other Contacts</a><br />
-                Email: testmail@templatesquare.com<br />
-                Website: www.templatesquare.com<br />
-                Phone: 0800-123456</p>
+            <h2>Адресс<br />
+                <span>наш офис в Бишкеке...</span></h2>
+            <p><a href="#">Наш офис</a><br />
+                1234 Б.Ц. Берекет, TS 56789<br />
+                Бишкек, Кыргызстан</p>
+            <p><a href="#">Наши контакты</a><br />
+                Email: testmail@nomadlife.com<br />
+                Телефон: +996 771 123 321</p>
         </div>
         <div class="clr"></div>
     </div>

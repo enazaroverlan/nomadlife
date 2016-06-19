@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ýðëàí
+ * User: ï¿½ï¿½ï¿½ï¿½ï¿½
  * Date: 18.06.2016
  * Time: 17:22
  */
@@ -17,3 +17,9 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+
+    $(".header_blog").animate({
+        opacity: 1
+    }, 200);
+</script>

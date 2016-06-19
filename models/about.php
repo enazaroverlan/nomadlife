@@ -5,12 +5,13 @@
  * Date: 19.06.2016
  * Time: 9:24
  */
+$allNews = database::GetAllNews();
 ?>
-<div class="header_blog">
+<div class="header_blog" id="header_block">
     <div class="body">
-        <h3>About Us</h3>
+        <h3>О нас</h3>
         <div class="left">
-            <h2>About company<br />
+            <h2>О фирме<br />
                 <span>Sed congue, dui vel tristique mollis...</span></h2>
             <img src="/<?php echo URL_PREFIX; ?>resources/images/about_1.jpg" alt="picture" width="593" height="146" />
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -22,23 +23,12 @@
         <div class="right">
             <h2>news &amp; events<br />
                 <span>Sed congue, dui vel tristique mollis...</span></h2>
-            <p><a href="#">12 Dec 2015 | 0 comments</a><br />
-                <span>Duis nec porttitor lorem</span><br />
-                Mauris et nisi urna nonfaucibus lacus magna. </p>
-            <p><a href="#">18 Dec 2015 | 5 comments</a><br />
-                <span> Aenean interdum</span><br />
-                Vestibulum ante ipsum primis into faucibus orci luctus ultrices antene posuere.</p>
-            <p><a href="#">4 Jan 2015 | 2 comments</a><br />
-                <span>Integer vitae nisl</span><br />
-                Duis volutpat ligula laoreet orci lectus placerat <br />
-                Curabitur lectus malesuada pulvinar.</p>
-            <p><a href="#">18 Dec 2015 | 5 comments</a><br />
-                <span>Aenean interdum</span><br />
-                Vestibulum ante ipsum primis into faucibus orci luctus ultrices antene posuere.</p>
-            <p><a href="#">4 Jan 2015 | 2 comments</a><br />
-                <span> Integer vitae nisl</span><br />
-                Duis volutpat ligula laoreet orci lectus placerat <br />
-                Curabitur lectus malesuada pulvinar.</p>
+
+            <?php foreach($allNews as $new): ?>
+            <p><a href="#"><?=$new['date']?> | 0 comments</a><br />
+                <span><?=$new['title']?></span><br />
+                <?=substr($new['content'], 0, 30)?></p>
+            <?php endforeach; ?>
         </div>
         <div class="clr"></div>
     </div>

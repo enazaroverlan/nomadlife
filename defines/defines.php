@@ -6,7 +6,10 @@
  * Time: 12:27
  */
 define("URL_PREFIX", "nomadlife/");
+
+// =================  DataBase ====================
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
 define("DB_PASS", "");
 define("DB_NAME", "nomadlife");
+//================== End DataBase =================

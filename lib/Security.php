@@ -7,6 +7,7 @@
  * Time: 12:47
  */
 require_once('../database/database.php');
+require_once('../defines/defines.php');
 class Security
 {
     private static $isAuth;
@@ -19,7 +20,7 @@ class Security
 
     public static function Login($login, $password)
     {
-        $log = database::Login($login, $password);
+        $log = database::SignIn($login, $password);
 
         if ($log) {
             self::$isAuth = true;
@@ -36,7 +37,7 @@ class Security
     {
         unset($_SESSION['isAuth']);
         unset($_SESSION['isAdmin']);
-        session_abort();
         self::$isAuth = false;
+        header('Location: /'.URL_PREFIX.'admin');
     }
 }
