@@ -29,18 +29,18 @@ if(!isset($_REQUEST['function'])) {
                 <td><?php echo($item['title']);?></td>
                 <td><?php echo(substr($item['content'], 0, 30).'...'); ?></td>
                 <td><a href="<?php echo($item['link']); ?>"><?php echo($item['link']); ?></td>
-                <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=slider&function=edit&id=<?php echo($item['id']); ?>">Edit</a></td>
-                <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=removeItemFromSlider&id=<?php echo($item['id']); ?>">Remove</a></td>
+                <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=slider&function=edit&id=<?php echo($item['id']); ?>" class="btn btn-primary">Edit</a></td>
+                <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=removeItemFromSlider&id=<?php echo($item['id']); ?>" class="btn btn-primary">Remove</a></td>
             </tr>
         <?php endforeach; ?>
     <?php else: ?>
         <tr>
             <td colspan="6">No items are found. Please add one</td>
-            <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=slider&function=add">Add item</a></td>
+            <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=slider&function=add" class="btn btn-primary">Add item</a></td>
         </tr>
     <?php endif; ?>
     <tr>
-        <td colspan="7"><a href="/<?php echo(URL_PREFIX); ?>admin/?action=slider&function=add">Add item</a> </td>
+        <td colspan="7"><a href="/<?php echo(URL_PREFIX); ?>admin/?action=slider&function=add" class="btn btn-primary">Add item</a> </td>
     </tr>
     </tbody>
 </table>

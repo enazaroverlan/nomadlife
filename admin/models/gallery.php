@@ -25,18 +25,18 @@ if(!isset($_REQUEST['function'])) {
                     <td><?php echo($item['id']); ?></td>
                     <td><img src="<?php echo($item['image']); ?>" width="100px" /></td>
                     <td><?php echo($item['description']);?></td>
-                    <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=gallery&function=edit&id=<?php echo($item['id']); ?>">Edit</a></td>
-                    <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=removeImageFromGallery&id=<?php echo($item['id']); ?>">Remove</a></td>
+                    <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=gallery&function=edit&id=<?php echo($item['id']); ?>" class="btn btn-primary">Edit</a></td>
+                    <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=removeImageFromGallery&id=<?php echo($item['id']); ?>" class="btn btn-primary">Remove</a></td>
                 </tr>
             <?php endforeach; ?>
         <?php else: ?>
             <tr>
                 <td colspan="6">No images are found. Please add one</td>
-                <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=gallery&function=add">Add image</a></td>
+                <td><a href="/<?php echo(URL_PREFIX); ?>admin/?action=gallery&function=add" class="btn btn-primary">Add image</a></td>
             </tr>
         <?php endif; ?>
         <tr>
-            <td colspan="7"><a href="/<?php echo(URL_PREFIX); ?>admin/?action=gallery&function=add">Add image</a> </td>
+            <td colspan="7"><a href="/<?php echo(URL_PREFIX); ?>admin/?action=gallery&function=add" class="btn btn-primary">Add image</a> </td>
         </tr>
         </tbody>
     </table>
