@@ -1,0 +1,9 @@
+{
+  "name": "erlan/nomadlife",
+  "description": "Nomadlife",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "require": {
+    "swiftmailer/swiftmailer": "@stable"
+  }
+}

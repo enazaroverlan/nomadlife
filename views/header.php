@@ -28,7 +28,7 @@ else
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="/<?php echo URL_PREFIX; ?>style/style.css" rel="stylesheet" type="text/css" />
     <link href="/<?php echo URL_PREFIX; ?>style/bootstrap.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/jquery.v1.4.2.js"></script>
+    <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/jquery.cycle.all.min.js"></script>
     <!--  ACTIVATE CUFON TEXT REPLACEMENT IF ENABLED IN THEME OPTIONS  -->
     <script type="text/javascript" src="/<?php echo URL_PREFIX; ?>js/cufon-yui.js"></script>
@@ -77,7 +77,7 @@ else
 <div class="main">
     <div class="header_resize">
         <div class="header">
-            <div class="logo"><a href="index.html"><img src="/<?php echo URL_PREFIX; ?>resources/images/logo1.gif" width="234" height="118" border="0" alt="logo" /></a></div>
+            <div class="logo"><a href="/<?php echo(URL_PREFIX); ?>"><img src="/<?php echo URL_PREFIX; ?>resources/images/logo1.gif" width="234" height="118" border="0" alt="logo" /></a></div>
             <div class="menu">
                 <ul>
                     <li><a href="/<?php echo URL_PREFIX; ?>" <?php if(!isset($_REQUEST['action'])) { echo 'class="active"'; $pageTitle = "Главная"; } ?>><span>Главная</span></a></li>
