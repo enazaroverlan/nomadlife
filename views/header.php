@@ -77,7 +77,7 @@ else
 <div class="main">
     <div class="header_resize">
         <div class="header">
-            <div class="logo"><a href="/<?php echo(URL_PREFIX); ?>"><img src="/<?php echo URL_PREFIX; ?>resources/images/logo1.gif" width="234" height="118" border="0" alt="logo" /></a></div>
+            <div class="logo"><a href="/<?php echo(URL_PREFIX); ?>"><img src="/<?php echo URL_PREFIX; ?>resources/images/logo3.png" width="234" height="118" border="0" alt="logo" /></a></div>
             <div class="menu">
                 <ul>
                     <li><a href="/<?php echo URL_PREFIX; ?>" <?php if(!isset($_REQUEST['action'])) { echo 'class="active"'; $pageTitle = "Главная"; } ?>><span>Главная</span></a></li>

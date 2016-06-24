@@ -293,7 +293,7 @@ class database
 
     public static function AddEventIntoEvents($title, $description, $date)
     {
-        $query = "INSERT INTO events(id, title, description, date) VALUES('', '$title', '$description', '$date')";
+        $query = "INSERT INTO events(id, title, description, date, event_date) VALUES('', '$title', '$description', 'Опубликовано".date('Y-m-d')."', '$date')";
         $result = mysqli_query(self::Connect(), $query);
 
         return $result;
@@ -301,7 +301,7 @@ class database
 
     public static function EditEventInEvents($id, $title, $description, $date)
     {
-        $query = "UPDATE events SET title='$title', description='$description', date='$date' WHERE id='$id'";
+        $query = "UPDATE events SET title='$title', description='$description', date='Отредактировано: ".date('Y-m-d')."', event_date='$date' WHERE id='$id'";
         $result = mysqli_query(self::Connect(), $query);
 
         return $result;
