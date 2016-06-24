@@ -72,6 +72,7 @@ class adminRouting
                 break;
             case 'removeUser': database::RemoveUser($_REQUEST['id']);
                 header('Location: /'.URL_PREFIX.'admin/?action=users');
+                break;
 
         }
     }

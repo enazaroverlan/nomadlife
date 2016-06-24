@@ -44,7 +44,7 @@
             </form>
             <div id="custom_message" style="width: 200px; height: 50px; border: 0; background: white; display: none;">
                 <span id="loading" style="display: none;"><img src="/<?php echo(URL_PREFIX); ?>resources/images/loading.gif" /></span>
-                <span id="message" style="display: none;"></span>
+                <span id="responseMessage" style="display: none;"></span>
             </div>
         </div>
         <div class="right">

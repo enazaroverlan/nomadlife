@@ -35,9 +35,9 @@
             data: $(content).serialize(),
             success: function(response) {
                   console.log(response);
-                var msg = $('#message');
+                var msg = $('#responseMessage');
                 $('#loading').fadeOut('slow');
-                msg.fadeIn('slow');
+                $(msg).fadeIn('slow');
                 if(response.result == 'error') { msg.css('color', 'white').css('background', 'red'); msg.text = '' + response.message; } else { msg.css('color', 'white').css('background', 'green'); msg.text = '' + response.message; }
             },
             error: function(response) { console.log(response) },
